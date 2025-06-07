@@ -1,0 +1,1079 @@
+/* General styles */
+
+*{
+
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  font-family: poppins;
+  font-weight: 400;
+  box-sizing: border-box;
+  transition: var(--default-transition);
+  font-size: var(--default-font-size);
+  scroll-behavior: smooth;
+  color: var(--black);
+
+}
+
+:root{
+
+  /* Color palette */
+
+  --black: #222831;
+  --light-black: #393E46;
+  --offset-black:#3E3939;
+  --grey: #686D76;
+  --white: #EEEEEE;
+  --orange: #D65A31;
+
+  /* ------------- */
+
+  /* Font sizing */
+
+  --default-font-size: 1rem;
+  --up-font-size: 1.5rem;
+  --up-2x-font-size: 2rem;
+
+  /* ------------- */
+
+  /* Transition properties */
+  
+  --default-transition: all 0.20s ease;
+
+  /* ------------- */
+
+  /* Shadow properties */
+
+  --shadow: 0px 0px 20px rgba(0,0,0,0.30);
+
+  /* ------------- */
+
+  /* Padding properties */
+
+  --element-padding: 2rem;
+  --media-padding-10: 0 10rem;
+  --media-padding-8: 0 8rem;
+  --media-padding-6: 0 6rem;
+  --media-padding-4: 0 4rem;
+  --media-padding-2: 0 2rem;
+
+  /* ------------- */
+
+  /* Gap properties */
+
+  --gap: 2rem;
+
+  /* ------------- */
+
+}
+
+.flexer{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.flexer-column{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+html{
+
+  background-color: var(--white);
+
+}
+
+html::-webkit-scrollbar{
+
+  width: .5rem;
+
+}
+
+html::-webkit-scrollbar-thumb{
+
+  background-color: var(--orange);
+
+}
+
+html::-webkit-scrollbar-track{
+
+  background-color: var(--white);
+
+}
+
+.main-content-container{
+
+  height: 100%;
+  width: 100%;
+  background-color: var(--white);
+  position: relative;
+
+}
+
+.content-container{
+
+  padding: var(--media-padding-10);
+
+}
+
+/* --------------------- */
+
+/* End of General styles */
+
+/* Header styles */
+
+header{
+
+  width: 100%;
+  height: 5rem;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 1000;
+
+}
+
+header div{
+
+  flex: 1;
+  height: 100%;
+
+}
+
+#middle{
+
+  flex: 1.5;
+
+}
+
+.h-left{
+
+  justify-content: start;
+
+}
+
+.h-left a{
+
+  font-weight: 600;
+  font-size: var(--up-font-size);
+  border-bottom: 2px solid var(--white);
+
+}
+
+.h-left a:hover{
+
+  color: var(--orange);
+  border-bottom: 2px solid var(--orange);
+  transform: scale(115%) rotate(-5deg);
+
+}
+
+.h-middle{
+
+  gap: var(--gap);
+
+}
+
+.h-middle a{
+
+  color: var(--grey);
+  border-bottom: 2px solid var(--white);
+
+}
+
+.h-middle a:hover{
+
+  color: var(--orange);
+  transform: scale(115%);
+  border-bottom: 2px solid var(--orange);
+
+}
+
+.h-right{
+
+  justify-content: end;
+  gap: 1.5rem;
+
+}
+
+.h-right-btn{
+
+  padding: .5rem 1rem;
+  background-color: var(--orange);
+  border-radius: 10px;
+  color: var(--white);
+
+}
+
+.h-right-btn:hover{
+
+  transform: scale(115%);
+
+}
+
+.h-right-log-btn{
+
+  color: var(--grey);
+  border-bottom: 2px solid var(--white);
+
+}
+
+.h-right-log-btn:hover{
+
+  color: var(--orange);
+  border-bottom: 2px solid var(--orange);
+  transform: scale(115%);
+
+}
+
+.header-2{
+
+  display: none;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 1000;
+
+}
+
+.h-middle-2{
+
+  justify-content: space-evenly;
+
+}
+
+/* --------------------- */
+
+/* End of Header styles */
+
+/* Body styles */
+
+.body{
+
+  height: 85vh;
+
+}
+
+.body-content{
+
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  background-image: linear-gradient(to left,rgba(0, 0, 0, 0.20) 0%,rgba(0, 0, 0, 0.80) 100%), url(../Images/Background-1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem;
+
+}
+
+.body-content div{
+
+  height: 100%;
+  flex: 1;
+
+}
+
+.body-content .bc-left{
+
+  flex: 1.5;
+  align-items: start;
+
+}
+
+.body-content .bc-left h1{
+
+  color: var(--white);
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  width: 100%;
+
+}
+
+.body-content .bc-left .bc-span{
+
+  color: var(--black);
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  width: 100%;
+
+}
+
+.body-content .bc-left p{
+
+  color: var(--white);
+  font-weight: 300;
+
+}
+
+.body-content .bc-left a{
+
+  color: var(--white);
+  font-weight: 400;
+  padding: .5rem 1rem;
+  background-color: var(--orange);
+  border: 2px solid var(--orange);
+  border-radius: 10px;
+  margin-top: .8rem;
+
+}
+
+.body-content .bc-left a:hover{
+
+  background-color: var(--white);
+  color: var(--orange);
+  border-color: var(--white);
+
+}
+
+.bc-left .bc-soc-links{
+
+  flex: 0;
+  gap: 1rem;
+  width: 100%;
+  justify-content: start;
+
+}
+
+.bc-soc-links a{
+
+  height: auto;
+  background-color: transparent !important;
+  font-size: 1.5rem;
+  border: none !important;
+  padding: unset !important;
+
+}
+
+.bc-soc-links a:hover{
+
+  transform: scale(115%);
+
+}
+
+/* --------------------- */
+
+/* End of body styles */
+
+/* Featured styles */
+
+.featured{
+
+  height: auto;
+  margin-top: 2rem;
+
+}
+
+.featured-content{
+
+  height: 100%;
+  border-radius: 15px;
+  padding: var(--element-padding);
+  gap: var(--gap);
+
+}
+
+.featured-content .fc-c-card{
+
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: start;
+
+}
+
+#f-card{
+
+  flex: .7;
+
+}
+
+#f-card img{
+
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+
+}
+
+.featured-content .fc-c-card h1{
+
+  width: 100%;
+  font-size: var(--up-font-size);
+  font-weight: 700;
+  color: var(--grey);
+
+}
+
+.featured-content .fc-c-card p{
+
+  color: var(--grey);
+
+}
+
+/* --------------------- */
+
+/* End of Featured styles */
+
+/* New arrivals styles */
+
+.n-arrivals{
+
+  margin-top: 2rem;
+  height: auto;
+
+}
+
+.n-arrivals-content{
+
+  height: 100%;
+  border-radius: 15px;
+  padding: var(--element-padding);
+
+}
+
+.n-arrivals-card{
+
+  height: 100%;
+  justify-content: start;
+  gap: var(--gap);
+
+}
+
+.n-arrivals-card h1{
+
+  font-size: var(--up-font-size);
+  font-weight: 700;
+  color: var(--grey);
+  width: 100%;
+  text-align: center;
+
+}
+
+.n-arrivals-card .na-cards{
+
+  flex: 1;
+  width: 100%;
+  gap: var(--gap);
+
+}
+
+.n-arrivals-card .na-cards .na-img-txt-cards{
+
+  height: 100%;
+  flex: 1;
+  border-radius: 10px;
+
+}
+
+.n-arrivals-card .na-cards .na-img-txt-cards .na-img{
+
+  flex: 6;
+  width: 100%;
+
+}
+
+.n-arrivals-card .na-cards .na-img-txt-cards .na-txt{
+
+  flex: 1;
+  width: 100%;
+
+}
+
+.n-arrivals-card .na-cards .na-img-txt-cards .na-img img{
+
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.na-txt h1{
+
+  font-weight: 400;
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--grey);
+  width: fit-content;
+  padding-bottom: .3rem;
+
+}
+
+#wt-1{
+
+  object-position: 80%;
+
+}
+
+#wb-1{
+
+  object-position: right;
+
+}
+
+.n-arrivals-card .na-cards .na-img-txt-cards .na-img img:hover{
+
+  &.n-arrivals-card .na-cards .na-img-txt-cards{
+
+    transform: scale(110%);
+
+  }
+
+
+}
+
+
+/* --------------------- */
+
+/* End of New arrivals styles */
+
+/* Mochi club styles */
+
+.m-club{
+
+  margin-top: 2rem;
+  height: auto;
+
+}
+
+.m-club-content{
+
+  height: 100%;
+  width: 100%;
+  padding: var(--element-padding);
+
+}
+
+.m-club-card{
+
+  height: 100%;
+  width: 100%;
+
+}
+
+.m-club-card h1{
+
+  width: 100%;
+  text-align: center;
+  font-size: var(--up-font-size);
+  font-weight: 700;
+  color: var(--grey);
+
+}
+
+.m-club-card p{
+
+  font-size: var(--default-font-size);
+  width: 100%;
+  text-align: center;
+  margin-top: .5rem;
+  color: var(--grey);
+
+}
+
+.m-club-perks{
+
+  height: auto;
+  width: 100%;
+  margin-top: .5rem;
+  flex-wrap: wrap;
+
+}
+
+.m-club-perks-cards{
+
+  height: 15rem;
+  width: 10rem;
+  flex-grow: 1;
+  
+}
+
+.m-club-perks-cards a{
+
+  height: 100%;
+  width: 100%;
+
+}
+
+.m-club-perks-cards a h1{
+
+  font-size: 4rem;
+
+}
+
+.m-club-perks-cards a p{
+
+  margin-top: 0;
+  font-size: 1rem;
+
+}
+
+.m-club-card .mc-btn{
+
+  padding: .5rem 4.9rem;
+  border-radius: 10px;
+  background-color: var(--orange);
+  color: var(--white);
+  border: 2px solid var(--orange);
+
+}
+
+.m-club-card .mc-btn:hover{
+
+  background-color: transparent;
+  color: var(--orange);
+
+}
+
+/* End of Mochi club styles */
+
+
+
+/* Footer styles */
+
+.footer{
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+.footer-content{
+
+  height: auto;
+  width: auto;
+  padding: 3rem;
+  background-image: linear-gradient(to left,rgba(0, 0, 0, 0.20) 0%,rgba(0, 0, 0, 0.80) 100%), url(../Images/Apparel-1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+
+}
+
+.fc-card{
+
+  height: 100%;
+  width: 100%;
+
+}
+
+.fc-card h1{
+
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  font-size: var(--up-2x-font-size);
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+
+.fc-card p{
+
+  padding: 0 10rem;
+  color: var(--white);
+  text-align: center;
+  margin-top: .5rem;
+
+}
+
+.fc-links-card{
+
+  height: auto;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: var(--white);
+  margin-top: 2.5rem;
+
+}
+
+.fc-cl-content{
+
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.fc-cl-c-card{
+
+  height: auto;
+  width: 10rem;
+  flex-grow: 1;
+  justify-content: start;
+  gap: 1rem;
+
+}
+
+.fc-cl-c-card h1{
+
+  color: var(--black);
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: none;
+
+}
+
+.fc-cl-c-card p{
+
+  color: var(--grey);
+  text-align: center;
+  font-size: 1rem;
+  text-transform: none;
+  padding: 0;
+  width: 100%;
+
+}
+
+.fc-cl-c-card a{
+
+  width: 100%;
+
+}
+
+/* --------------------- */
+
+/* End of footer styles */
+
+
+
+/* Media queries */
+
+@media(max-width:1150px){
+
+  .content-container{
+
+    padding: var(--media-padding-8);
+
+  }
+
+  .header-2{
+
+    display: flex;
+    top: 4.9rem;
+
+  }
+
+  .h-middle{
+
+    display: none;
+
+  }
+
+  .h-middle-2{
+
+    display: flex;
+
+  }
+
+  .body-content .bc-left{
+
+    flex: 2;
+
+  }
+
+  .featured-content{
+
+    flex-direction: column;
+    padding: 0;
+
+  }
+
+  .n-arrivals-content{
+
+    padding: 0;
+
+  }
+
+  .m-club-content{
+
+    padding: 0;
+
+  }
+
+  .fc-card p{
+
+    padding: 0 6rem;
+  
+  }
+
+  .fc-cl-content{
+
+    flex-direction: column;
+    gap: var(--gap);
+
+  }
+
+  .fc-cl-c-card{
+
+    width: 100%;
+
+  }
+  
+}
+
+@media(max-width:950px){
+
+  .content-container{
+
+    padding: var(--media-padding-6);
+
+  }
+
+  .body-content .bc-right{
+
+    display: none;
+
+  }
+
+  .body-content .bc-left{
+
+    text-align: center;
+
+  }
+
+  .body-content .bc-left {
+
+    align-items: center;
+
+  }
+
+  .bc-left .bc-soc-links{
+
+    justify-content: center;
+
+  }
+
+  .fc-card p{
+
+    padding: 0 4rem;
+  
+  }
+
+}
+
+@media(max-width:850px){
+
+  .content-container{
+
+    padding: var(--media-padding-4);
+
+  }
+
+  .body-content .bc-left{
+
+    flex: 3;
+
+  }
+
+  .body{
+
+    height: 90vh;
+    
+  }
+
+  .na-cards{
+
+    flex-direction: column;
+
+  }
+
+  .fc-card p{
+
+    padding: 0;
+  
+  }
+
+}
+
+@media(max-width:600px){
+
+  .content-container{
+
+    padding: var(--media-padding-2);
+
+  }
+
+  header a{
+
+    font-size: .9rem;
+
+  }
+
+  header .h-left a{
+
+    font-size: 1rem;
+
+  }
+
+  header .h-right{
+
+    flex: 1.5;
+
+  }
+
+  .body-content .bc-left h1{
+
+    font-size: 1.5rem;
+
+  }
+
+  .body-content .bc-left .bc-span{
+
+    font-size: 1.5rem;
+
+  }
+
+  .body-content .bc-left p{
+
+    font-size: .9rem;
+
+  }
+
+  .body-content .bc-left a{
+
+    font-size: .9rem;
+
+  }
+
+  .body-content .bc-soc-links a{
+
+    font-size: 1.5rem;
+
+  }
+
+  .body{
+
+    height: 75vh;
+    
+  }
+
+  .body-content{
+
+    padding: 2rem;
+
+  }
+
+  .featured-content .fc-c-card h1{
+
+    font-size: 1.3rem;
+
+  }
+
+  .featured-content .fc-c-card p{
+
+    font-size: .9rem;
+
+  }
+
+  .n-arrivals-card .na-cards .na-img-txt-cards .na-img img{
+
+    height: 20rem;
+    
+  }
+
+  .na-txt a h1{
+
+    font-size: 1rem;
+
+  }
+
+  .n-arrivals-card h1{
+
+    font-size: 1.3rem;
+
+  }
+
+  .m-club-card h1{
+
+    font-size: 1.3rem;
+
+  }
+
+  .m-club-card p{
+
+    font-size: .9rem;
+
+  }
+
+  .m-club-perks-cards a h1{
+
+    font-size: 3rem;
+  
+  }
+  
+  .m-club-perks-cards a p{
+  
+    font-size: .9rem;
+  
+  }
+
+  .m-club-perks-cards{
+
+    height: 10rem;
+    width: 8rem;
+    flex-grow: 1;
+    
+  }
+
+  .m-club-card .mc-btn{
+
+    font-size: .9rem;
+
+  }
+
+  .footer-content{
+
+    padding: 1rem;
+    padding-top: 2.5rem;
+
+  }
+
+  .fc-card h1{
+
+    font-size: 1.3rem;
+  
+  }
+
+  .fc-card p{
+
+    font-size: 0.9rem;
+
+  }
+
+  .fc-links-card{
+
+    padding: 2rem 0;
+
+  }
+
+  .fc-cl-c-card h1{
+
+    font-size: 1.2rem;
+
+  }
+
+  .fc-cl-c-card a p{
+
+    font-size: .9rem;
+
+  }
+
+}
+
+/* --------------------- */
+
+/* End of media queries */
